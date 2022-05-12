@@ -23,7 +23,7 @@ stucture of a collection
             .
         },
         fieldName: otherSchema
-    ss})
+    })
 ```
 
 ### mongoose model
@@ -124,13 +124,13 @@ await modelName.deleteMany({
 ### Updating Documents
 
 ```
-const document = await document.FindByID(_id)
+const document = await modelName.FindByID(_id)
 documnet.field = newValue
 await document.save()
 
 ```
 
-- Can even use .update()
+- Can even use modelName.update()
 - But that skips validation
 - As validation happends only when we save a document
 - So, getting the document, modifying it and saving it ensures validation even during update
