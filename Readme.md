@@ -1,6 +1,6 @@
 # Mangoose Tutorial (Web Dev Simplified)
 
-## Basic Set Up
+### Basic Set Up
 
 npm init -y
 npm install mongoose
