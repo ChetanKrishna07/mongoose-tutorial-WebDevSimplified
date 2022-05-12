@@ -11,19 +11,19 @@ npm i --save-dev nodemon
 stucture of a collection
 
 ```
-    new mongoose.Schema({
-        fieldName: fieldType,
+new mongoose.Schema({
+    fieldName: fieldType,
+    .
+    .
+    .
+    fieldName: {
+        subFieldName: subFieldType
         .
         .
         .
-        fieldName: {
-            subFieldName: subFieldType
-            .
-            .
-            .
-        },
-        fieldName: otherSchema
-    })
+    },
+    fieldName: otherSchema
+})
 ```
 
 ### mongoose model
@@ -31,22 +31,22 @@ stucture of a collection
 Creates actual collection
 
 ```
-    mongoose.model('ModelName', schemaName)
+mongoose.model('ModelName', schemaName)
 ```
 
 ### adding a new documents
 
 ```
-    const document1 = new ModelName({
-        field1: value,
-        field2: value
-    })
-    document1.save() // save returns a promise
+const document1 = new ModelName({
+    field1: value,
+    field2: value
+})
+document1.save() // save returns a promise
 
-    const document1 = ModelName.create({
-        field1: value,
-        field2: value
-    }) // create() returns a promise
+const document1 = ModelName.create({
+    field1: value,
+    field2: value
+}) // create() returns a promise
 ```
 
 ### Schema Validation
