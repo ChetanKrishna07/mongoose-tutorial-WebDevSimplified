@@ -6,7 +6,7 @@ npm init -y
 npm install mongoose
 npm i --save-dev nodemon
 
-### mongoose Schema
+### Mongoose Schema
 
 stucture of a collection
 
@@ -26,7 +26,7 @@ new mongoose.Schema({
 })
 ```
 
-### mongoose model
+### Mongoose model
 
 Creates actual collection
 
@@ -34,7 +34,7 @@ Creates actual collection
 mongoose.model('ModelName', schemaName)
 ```
 
-### adding a new documents
+### Adding a new documents
 
 ```
 const document1 = new ModelName({
